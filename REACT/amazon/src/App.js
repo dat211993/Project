@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router,Switch, Route,Link} from "react-router-dom";
 import Header from './component/Header';
+import Home from './component/Home';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Switch>
         
         <Route path="/checkout">
+          <Header />
           <h1>Checkout</h1>
         </Route>
 
@@ -19,8 +21,7 @@ function App() {
 
         <Route path="/">
           <Header />
-          <h1>HOME PAGE</h1>
-         
+          <Home />
         </Route>
 
 
